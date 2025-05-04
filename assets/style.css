@@ -1,0 +1,8 @@
+@import url(reset.css);
+@import url(css/pages/homePage.css);
+@import url(css/components/navbar.css);
+
+*{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+  }
