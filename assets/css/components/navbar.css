@@ -7,6 +7,9 @@ nav{
     display: flex;
     align-items: center;
     justify-content: left;
+    h1{
+        color:white
+    }
    
 }
 

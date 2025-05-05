@@ -1,0 +1,9 @@
+.footer-area{
+    width: 100%;
+    background-color: red;
+    footer{
+        a{
+            color: red;
+        }
+    }
+}

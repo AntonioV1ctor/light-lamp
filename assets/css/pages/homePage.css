@@ -32,6 +32,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     .login-user-inputs{
         width: 30vw;
         height: 35vh;
@@ -42,21 +43,57 @@
         justify-content: center;
         flex-direction: column;
         gap: 10px;
-        input{
-            cursor: pointer;
-        }
-        div{
+        .user-input-div{
             display: flex;
             flex-direction: column;
+            position: relative;
             input{
                 cursor: pointer;
+                
             }
         }
+    }
+}
+
+.email-icon{
+    position: absolute;
+    top: 26px;
+    left: 5px;
+    color: #4F4F4F;
+}
+
+.pass-icon{
+    position: absolute;
+    top: 26px;
+    left: 5px;
+    color: #4F4F4F;
+}
+.default-input-text{
+    width: 15vw;
+    min-width: 200px;
+    min-height: 30px;
+    padding: 0 25px 0px;
+}
+.default-input-submit{
+    width: 100px;
+    height: 35px;
+    transition: 0.5s;
+    cursor: pointer;
+    &:hover{
+        scale: 102%;
+        background-color:#CD2355;
+        border: none;
+        border-radius: 2px;
+        color: aliceblue;
     }
 }
 
 @media (max-width: 768px){
     .login-user-inputs{
         min-width: 90%;
+    }
+    .default-input-text{
+        width: 28vw;
+        min-width: 190px;
     }
 }
