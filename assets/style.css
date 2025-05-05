@@ -4,7 +4,53 @@
 @import url(/assets/css/components/navbar.css);
 @import url(/assets/css/components/footer.css);
 
-*{
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-  }
+* {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+:root{
+  --ui-navigation-default: #CD2355;
+  --icon-color-default: #4F4F4F;
+  --background-color-default: rgb(255, 255, 255);
+  --box-shadow-color-default:rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  --box-shadow-color-default2:rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  --box-shadow-color-default3: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  --text-color-white-default: white;
+}
+
+/* Default Container Area*/
+.admin-home,
+.main-home,
+.main-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+  width: 100%;
+}
+
+.admin-container,
+.home-container,
+.status-container {
+  background-color:var(--background-color-default) ;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-box,
+.home-box,
+.status-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  height: 90%;
+  background-color: var(--background-color-default);
+  border-radius: 11px;
+  box-shadow: var(--box-shadow-color-default) ;
+  overflow: hidden;
+}

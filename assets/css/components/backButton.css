@@ -1,0 +1,19 @@
+.component-back-button{
+    width: 45px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: transparent;
+    border: none;
+    color: blueviolet;
+    cursor: pointer;
+}
+#component-back-icon{
+    
+    font-size: 35px;
+}
+
+@media (max-width: 768px) {
+    .component-back-button{
+        margin-bottom: 20px;
+    }
+}

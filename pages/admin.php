@@ -8,7 +8,6 @@
                 <div class="options-container">
                     <div class="options-box">
                         <div class="options-area">
-
                             <a href="scripts">
                                 <div class="options-default-box">
                                     <svg class="script-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
@@ -62,12 +61,9 @@
                                     <h3>Config</h3>
                                 </div>
                             </a>
-
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </main>
