@@ -1,8 +1,10 @@
 @import url(reset.css);
 @import url(/assets/css/pages/homePage.css);
 @import url(/assets/css/pages/adminPage.css);
+@import url(/assets/css/pages/statusPage.css);
 @import url(/assets/css/components/navbar.css);
 @import url(/assets/css/components/footer.css);
+@import url(/assets/css/components/backButton.css);
 
 * {
   font-family: "Poppins", sans-serif;
@@ -17,6 +19,7 @@
   --box-shadow-color-default2:rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   --box-shadow-color-default3: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   --text-color-white-default: white;
+  --text-color-whiteGray-default: #E3E3E3;
 }
 
 /* Default Container Area*/
@@ -42,8 +45,7 @@
 }
 
 .admin-box,
-.home-box,
-.status-box {
+.home-box {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -53,4 +55,10 @@
   border-radius: 11px;
   box-shadow: var(--box-shadow-color-default) ;
   overflow: hidden;
+}
+
+.text-default-style{
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-color-whiteGray-default);
 }

@@ -4,7 +4,7 @@
     border-radius: 100%;
     background-color: transparent;
     border: none;
-    color: blueviolet;
+    color: var(--ui-navigation-default);
     cursor: pointer;
 }
 #component-back-icon{
@@ -14,6 +14,6 @@
 
 @media (max-width: 768px) {
     .component-back-button{
-        margin-bottom: 20px;
+        margin-bottom: 0px;
     }
 }
