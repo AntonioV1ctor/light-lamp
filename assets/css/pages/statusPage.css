@@ -1,17 +1,17 @@
-.status-box{
-  display: flex;
-  align-items: left;
-  flex-direction: column;
-  justify-content: left;
-  width: 90%;
-  height: 90%;
-  background-color: var(--background-color-default);
-  border-radius: 11px;
-  box-shadow: var(--box-shadow-color-default) ;
-  overflow: hidden;
+.status-box {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: left;
+    width: 90%;
+    height: 90%;
+    background-color: var(--background-color-default);
+    border-radius: 11px;
+    box-shadow: var(--box-shadow-color-default);
+    overflow: hidden;
 }
 
-.status-main-option{
+.status-main-option {
     width: 100%;
     height: 100%;
     display: flex;
@@ -19,7 +19,7 @@
     justify-content: center;
 }
 
-.status-main-box{
+.status-main-box {
     width: 80%;
     height: 80%;
     display: flex;
@@ -28,6 +28,20 @@
     flex-wrap: wrap;
 }
 
+.options-default-box-no-hover {
+    width: 130px;
+    height: 130px;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-direction: column;
+    box-shadow: var(--box-shadow-color-default2);
+    transition: 0.5s;
+    overflow: hidden;
+    color: var(--text-color-whiteGray-default);
+    background-color: var(--ui-navigation-default);
 
 
-
+}
