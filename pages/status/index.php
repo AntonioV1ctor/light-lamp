@@ -17,7 +17,10 @@
                             <?php
                             $output = shell_exec("sensors | grep 'temp1:' | awk '{print $2}'");
                             if ($output) {
-                                echo "<pre>" . trim($output) . "°C</pre>";
+                                while(true){
+                                    echo "<pre>" . trim($output) . "°C</pre>";
+                                    sleep(10);
+                                }
                             } else {
                                 echo "Fail";
                             }
@@ -33,7 +36,10 @@
                             <?php
                             $output2 = shell_exec("free -m | awk '/^Mem:/ { print $7 \" MB\" }'");
                             if ($output2) {
-                                echo "<pre>$output2</pre>";
+                                while(true){
+                                    echo "<pre>$output2</pre>";
+                                    sleep(10);
+                                }
                             } else {
                                 echo "Fail";
                             }
@@ -48,7 +54,10 @@
                             <?php
                             $output3 = shell_exec("df -h --output=avail / | tail -1");
                             if ($output3) {
-                                echo "<pre>$output3</pre>";
+                                while(true){
+                                    echo "<pre>$output3</pre>";
+                                    sleep(10);
+                                }
                             } else {
                                 echo "Fail";
                             }
@@ -63,7 +72,10 @@
                             <?php
                             $output4 = shell_exec("top -bn1 | grep \"Cpu(s)\" | awk '{print 100 - $8 \"%\"}'");
                             if ($output4) {
-                                echo "<pre>$output4</pre>";
+                                while(true){
+                                    echo "<pre>$output4</pre>";
+                                    sleep(10);
+                                }
                             } else {
                                 echo "Fail";
                             }
@@ -78,7 +90,10 @@
                             <?php
                             $output5 = shell_exec("uptime -p");
                             if ($output5) {
-                                echo "<pre>$output5</pre>";
+                                while(true){
+                                    echo "<pre>$output5</pre>";
+                                    sleep(10);
+                                }
                             } else {
                                 echo "Fail";
                             }
